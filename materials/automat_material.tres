@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://tq14gshauwfd"]
+
+[ext_resource type="Shader" path="res://shaders/automat_shader.gdshader" id="1_why2h"]
+
+[resource]
+shader = ExtResource("1_why2h")
+shader_parameter/scale = 2.0
+shader_parameter/color1 = Vector4(1, 0, 0, 1)
+shader_parameter/color2 = Vector4(0, 0, 1, 1)

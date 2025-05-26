@@ -1,0 +1,89 @@
+[gd_scene load_steps=12 format=3 uid="uid://1866l67trieb"]
+
+[ext_resource type="Material" uid="uid://c0lqrqpachisy" path="res://materials/procedural_material.tres" id="1_agbbu"]
+[ext_resource type="Material" uid="uid://tq14gshauwfd" path="res://materials/automat_material.tres" id="2_ycsow"]
+[ext_resource type="Material" uid="uid://ctsnb0c7tjgpx" path="res://materials/autom_material.tres" id="3_08fp3"]
+[ext_resource type="Material" uid="uid://evve7xbodb1i" path="res://materials/fractal_material.tres" id="4_l5g1n"]
+[ext_resource type="Material" uid="uid://dim5c0prub4uk" path="res://materials/warping_material.tres" id="5_5yb85"]
+[ext_resource type="Material" uid="uid://di404kecyhaxb" path="res://materials/stone_material.tres" id="6_et785"]
+[ext_resource type="Material" uid="uid://bivx8fplor6hc" path="res://materials/cloud_material.tres" id="7_ntaxg"]
+[ext_resource type="Material" uid="uid://b4dkr7vey4o7i" path="res://materials/asphalt_material.tres" id="8_c6nwm"]
+
+[sub_resource type="Gradient" id="Gradient_21pvc"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_j1umq"]
+gradient = SubResource("Gradient_21pvc")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h8jii"]
+bg_color = Color(0.90276, 0.287118, 0.904811, 1)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = ExtResource("1_agbbu")
+position = Vector2(-458, 336)
+texture = SubResource("GradientTexture1D_j1umq")
+region_enabled = true
+region_rect = Rect2(0, 0, 400, 400)
+
+[node name="Panel" type="Panel" parent="Sprite2D"]
+material = ExtResource("1_agbbu")
+offset_left = -252.0
+offset_top = -82.0
+offset_right = -212.0
+offset_bottom = -42.0
+scale = Vector2(1.01443, 0.990757)
+theme_override_styles/panel = SubResource("StyleBoxFlat_h8jii")
+
+[node name="Panel" type="Panel" parent="."]
+material = ExtResource("2_ycsow")
+offset_left = -206.0
+offset_top = 138.0
+offset_right = -166.0
+offset_bottom = 178.0
+scale = Vector2(11.2295, 10.9807)
+
+[node name="Panel2" type="Panel" parent="."]
+material = ExtResource("3_08fp3")
+offset_left = 3944.0
+offset_top = 161.0
+offset_right = 3991.0
+offset_bottom = 207.0
+scale = Vector2(-9.84622, 9.44154)
+
+[node name="Panel3" type="Panel" parent="."]
+material = ExtResource("4_l5g1n")
+offset_left = 753.0
+offset_top = 164.0
+offset_right = 793.0
+offset_bottom = 204.0
+scale = Vector2(9.81436, 9.53061)
+
+[node name="Panel4" type="Panel" parent="."]
+material = ExtResource("5_5yb85")
+offset_left = 1211.0
+offset_top = 154.0
+offset_right = 1251.0
+offset_bottom = 194.0
+scale = Vector2(11.0257, 10.4488)
+
+[node name="Panel6" type="Panel" parent="."]
+material = ExtResource("6_et785")
+offset_left = 1789.0
+offset_top = 150.0
+offset_right = 2220.0
+offset_bottom = 588.0
+
+[node name="Panel7" type="Panel" parent="."]
+material = ExtResource("7_ntaxg")
+offset_left = 2898.0
+offset_top = 152.0
+offset_right = 3377.0
+offset_bottom = 610.0
+
+[node name="Panel5" type="Panel" parent="."]
+material = ExtResource("8_c6nwm")
+offset_left = 2337.0
+offset_top = 157.0
+offset_right = 2803.0
+offset_bottom = 601.0

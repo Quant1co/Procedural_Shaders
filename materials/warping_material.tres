@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dim5c0prub4uk"]
+
+[ext_resource type="Shader" path="res://shaders/warping_shader.gdshader" id="1_bmsnb"]
+
+[resource]
+shader = ExtResource("1_bmsnb")
+shader_parameter/scale = 5.0
+shader_parameter/color1 = Vector4(0.1, 0.62, 0.67, 1)
+shader_parameter/color2 = Vector4(0.67, 0.67, 0.5, 1)
+shader_parameter/animation_speed = 1.0

@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ctsnb0c7tjgpx"]
+
+[ext_resource type="Shader" path="res://shaders/autom_shader.gdshader" id="1_d78tm"]
+
+[resource]
+shader = ExtResource("1_d78tm")
+shader_parameter/scale = 11.0
+shader_parameter/threshold = 0.6
+shader_parameter/iterations = 27
+shader_parameter/wall_color = Color(0.2, 0.15, 0.1, 1)
+shader_parameter/floor_color = Color(0.3, 0.25, 0.2, 1)

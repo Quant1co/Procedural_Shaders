@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ccju66qhkjt44"]
+
+[ext_resource type="Shader" path="res://shaders/water_shader.gdshader" id="1_nqml2"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_nqml2")
+shader_parameter/base_color = Color(0, 0.356863, 0.643137, 1)
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/dark_color = Color(0.103744, 0.103744, 0.103744, 1)
+shader_parameter/scale = 6.0
+shader_parameter/line_width = 0.015
+shader_parameter/offset = Vector2(0.03, 0.03)
+shader_parameter/wave_speed = 1.0
+shader_parameter/global_height = 0.3
+shader_parameter/wave_direction = Vector2(0.8, 0.3)
+shader_parameter/primary_frequency = 1.2
+shader_parameter/secondary_frequency = 2.5
+shader_parameter/tertiary_frequency = 6.0

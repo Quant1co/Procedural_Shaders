@@ -1,0 +1,26 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://bivx8fplor6hc"]
+
+[ext_resource type="Shader" path="res://shaders/cloud_shader.gdshader" id="1_tys47"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_8o1ov"]
+noise_type = 2
+fractal_type = 2
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1ya3s"]
+seamless = true
+seamless_blend_skirt = 0.466
+noise = SubResource("FastNoiseLite_8o1ov")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_t7ja3"]
+noise_type = 3
+frequency = 0.005
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_kf11h"]
+seamless = true
+seamless_blend_skirt = 0.305
+noise = SubResource("FastNoiseLite_t7ja3")
+
+[resource]
+shader = ExtResource("1_tys47")
+shader_parameter/perlin_noise = SubResource("NoiseTexture2D_kf11h")
+shader_parameter/cell_noise = SubResource("NoiseTexture2D_1ya3s")

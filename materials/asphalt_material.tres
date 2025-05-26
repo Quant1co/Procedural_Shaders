@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://b4dkr7vey4o7i"]
+
+[ext_resource type="Shader" path="res://shaders/asphalt_shader.gdshader" id="1_h263t"]
+
+[resource]
+shader = ExtResource("1_h263t")
+shader_parameter/base_color = Color(0.5, 0.5, 0.5, 1)
+shader_parameter/low_freq = 10.0
+shader_parameter/high_freq = 100.0
+shader_parameter/graininess = 0.1

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqeokqkfvwi25"]
+
+[ext_resource type="Material" uid="uid://vow3t88nxsf2" path="res://materials/worldWater_material.tres" id="1_01b03"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rrhvp"]
+material = ExtResource("1_01b03")
+size = Vector2(5000, 5000)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l817j"]
+size = Vector3(20, 20, 20)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+mesh = SubResource("PlaneMesh_rrhvp")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.212317, 0.821505, 0.529199, -0.14096, -0.510135, 0.848465, 0.966981, -0.254739, 0.007489, 5.92603, 13.4332, -8.35413)
+mesh = SubResource("BoxMesh_l817j")
