@@ -76,10 +76,10 @@ offset_bottom = 588.0
 
 [node name="Panel7" type="Panel" parent="."]
 material = ExtResource("7_ntaxg")
-offset_left = 2898.0
-offset_top = 152.0
-offset_right = 3377.0
-offset_bottom = 610.0
+offset_left = 3008.0
+offset_top = -1018.0
+offset_right = 3898.0
+offset_bottom = -177.0
 
 [node name="Panel5" type="Panel" parent="."]
 material = ExtResource("8_c6nwm")

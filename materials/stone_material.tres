@@ -4,9 +4,9 @@
 
 [resource]
 shader = ExtResource("1_ffxo6")
-shader_parameter/bottom_color = Color(0.505882, 0, 0, 1)
-shader_parameter/top_color = Color(0, 0.529412, 0, 1)
-shader_parameter/wave_amp = 0.098
-shader_parameter/wave_size = 1.155
-shader_parameter/wave_time_mul = 0.377
+shader_parameter/bottom_color = Color(0.473008, 0.00172529, 0.301239, 1)
+shader_parameter/top_color = Color(0.464758, 0.310727, 0.818536, 1)
+shader_parameter/wave_amp = 0.012
+shader_parameter/wave_size = 3.601
+shader_parameter/wave_time_mul = 1.0
 shader_parameter/total_phases = 4
