@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://ds16h3gatia1u"]
+
+[ext_resource type="Shader" path="res://shaders/Perlim_shader.gdshader" id="1_yu8d8"]
+[ext_resource type="Texture2D" uid="uid://cp0atpctpenj2" path="res://Perlin.tres" id="2_i63qi"]
+
+[resource]
+shader = ExtResource("1_yu8d8")
+shader_parameter/scale = 0.1
+shader_parameter/noise_texture = ExtResource("2_i63qi")

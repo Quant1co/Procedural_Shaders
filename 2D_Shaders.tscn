@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://1866l67trieb"]
+[gd_scene load_steps=14 format=3 uid="uid://1866l67trieb"]
 
 [ext_resource type="Material" uid="uid://c0lqrqpachisy" path="res://materials/procedural_material.tres" id="1_agbbu"]
 [ext_resource type="Material" uid="uid://tq14gshauwfd" path="res://materials/automat_material.tres" id="2_ycsow"]
@@ -8,6 +8,8 @@
 [ext_resource type="Material" uid="uid://di404kecyhaxb" path="res://materials/stone_material.tres" id="6_et785"]
 [ext_resource type="Material" uid="uid://bivx8fplor6hc" path="res://materials/cloud_material.tres" id="7_ntaxg"]
 [ext_resource type="Material" uid="uid://b4dkr7vey4o7i" path="res://materials/asphalt_material.tres" id="8_c6nwm"]
+[ext_resource type="Material" uid="uid://cukd322wuut3y" path="res://materials/White_material.tres" id="9_1khsi"]
+[ext_resource type="Material" uid="uid://ds16h3gatia1u" path="res://materials/Perlin_material.tres" id="10_s7qgw"]
 
 [sub_resource type="Gradient" id="Gradient_21pvc"]
 
@@ -87,3 +89,17 @@ offset_left = 2337.0
 offset_top = 157.0
 offset_right = 2803.0
 offset_bottom = 601.0
+
+[node name="Panel8" type="Panel" parent="."]
+material = ExtResource("9_1khsi")
+offset_left = 1130.0
+offset_top = -881.0
+offset_right = 1769.0
+offset_bottom = -272.0
+
+[node name="Panel9" type="Panel" parent="."]
+material = ExtResource("10_s7qgw")
+offset_left = 217.0
+offset_top = -926.0
+offset_right = 848.0
+offset_bottom = -288.0
